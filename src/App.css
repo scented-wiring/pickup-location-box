@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+  background-color: #0a6fba;
+  margin: 0;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+#searchbox {
+  padding: 1px 20px 20px 20px;
+  margin: 20px auto 20px auto;
+  width: 35%;
+  flex-direction: column;
+  background-color: #f3ce56;
+}
+
+#pickup-location {
+  margin-top: 5px;
+  height: 25px;
+  width: 90%;
+}
