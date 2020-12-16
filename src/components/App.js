@@ -23,6 +23,7 @@ function App() {
         id="pickup-location"
         name="pickup-location"
         placeholder="city, airport, station, region and district..."
+        autoComplete="off"
         onFocus={handleFocus}
         onBlur={handleBlur}
         onChange={(e) => setQuery(e.target.value)}

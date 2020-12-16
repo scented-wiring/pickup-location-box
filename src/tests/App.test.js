@@ -1,4 +1,4 @@
-import { render, fireEvent, screen } from "@testing-library/react";
+import { render, fireEvent, screen, act } from "@testing-library/react";
 import App from "../components/App";
 
 test("renders a header", () => {
@@ -18,10 +18,16 @@ test("renders a textbox", () => {
 
 test("renders SearchResults when textbox is focused", () => {
   render(<App />);
-  fireEvent.focus(
-    screen.getByPlaceholderText(
-      "city, airport, station, region and district..."
-    )
-  );
-  expect(screen.getByText("Test")).toBeInTheDocument();
+  act(() => {
+    fireEvent.focus(
+      screen.getByPlaceholderText(
+        "city, airport, station, region and district..."
+      )
+    );
+    fireEvent.change(screen.getByRole("textbox"), {
+      target: { value: "test" },
+    });
+  });
+
+  expect(screen.getByTestId("SearchResults")).toBeInTheDocument();
 });
