@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Pick Up Location Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This component returns a list of suggested locations based on user input.
+
+# Screenshot
+
+![Component screenshot](https://github.com/scented-wiring/pickup-location-box/blob/master/screenshot.png)
+
+## Built with
+
+- React
+- Node.js
+
+## Testing Utilities
+
+- Jest
+- React Testing Library
+
+## Packages Used
+
+- Axios
 
 ## Available Scripts
 
