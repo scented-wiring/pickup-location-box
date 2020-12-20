@@ -1,6 +1,6 @@
 # Pick Up Location Component
 
-This component returns a list of suggested locations based on user input. You can see a live demo [here](https://pickup-location-box.herokuapp.com/)
+This component returns a list of suggested locations based on user input. You can see a live heroku demo [here](https://pickup-location-box.herokuapp.com/)
 
 # Screenshot
 
