@@ -23,3 +23,42 @@ h1 {
   height: 25px;
   width: 450px;
 }
+
+@media only screen and (max-width: 555px) {
+  #searchbox {
+    width: 400px;
+  }
+
+  #pickup-location {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  #searchbox {
+    width: 300px;
+  }
+
+  #pickup-location {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  #searchbox {
+    width: 200px;
+  }
+
+  #pickup-location {
+    font-size: 11px;
+    width: 150px;
+  }
+}
